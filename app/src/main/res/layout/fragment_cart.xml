@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.CartFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/deliv_price_txt"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/text_view_layout"
+            android:gravity="center"
+            android:text="30 $"
+            android:textColor="#000000"
+            android:textColorHint="#0C0C0C"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orig_price_txt" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:text="total price"
+            android:textColor="#070707"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/orig_price_txt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ListView
+            android:id="@+id/list_cart"
+            android:layout_width="404dp"
+            android:layout_height="292dp"
+            android:background="#F1EAEA"
+            android:divider="#F1EAEA"
+            android:dividerHeight="10dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="248dp"
+            android:layout_marginLeft="248dp"
+            android:layout_marginTop="36dp"
+            android:background="#E44876A3"
+            android:padding="10dp"
+            android:text="Calculate bill"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_cart" />
+
+        <TextView
+            android:id="@+id/orig_price_txt"
+            android:layout_width="182dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/text_view_layout"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textColorHint="#0C0C0C"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_cart" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:text="delivery price"
+            android:textColor="#070707"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/deliv_price_txt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/location_txt"
+            android:layout_width="245dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/text_view_layout"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textColorHint="#0C0C0C"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_price_txt" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:text="Location"
+            android:textColor="#070707"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/location_txt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/get_loc_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="36dp"
+            android:background="#E44876A3"
+            android:padding="10dp"
+            android:text="get"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/location_txt"
+            app:layout_constraintTop_toBottomOf="@+id/total_price_txt" />
+
+        <Button
+            android:id="@+id/confirm_btm"
+            android:layout_width="151dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:background="#E44876A3"
+            android:text="Confirm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/total_price_txt"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/text_view_layout"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textColorHint="#0C0C0C"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deliv_price_txt" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:text="Total price"
+            android:textColor="#070707"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/total_price_txt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="give rate"
+            android:textColor="#040404"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/spinner_rating" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

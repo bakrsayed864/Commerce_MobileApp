@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SearchFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="213dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_view_layout"
+            android:ems="10"
+            android:hint="Search"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#090909"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/mice_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_shape"
+            android:src="@android:drawable/ic_btn_speak_now"
+            app:layout_constraintStart_toEndOf="@+id/search_text"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ListView
+            android:id="@+id/search_listView"
+            android:layout_width="402dp"
+            android:layout_height="548dp"
+            android:layout_marginTop="20dp"
+            android:background="#F8F8F8"
+            android:divider="@color/white"
+            android:dividerHeight="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_btn" />
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/layout_shape"
+            android:src="@android:drawable/ic_menu_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_text" />
+
+        <ImageButton
+            android:id="@+id/camera_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_shape"
+            android:src="@android:drawable/ic_menu_camera"
+            app:layout_constraintStart_toEndOf="@+id/mice_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
